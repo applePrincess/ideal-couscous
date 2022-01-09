@@ -1,6 +1,6 @@
-{ ... }:
+{ nixpkgs }:
 let
-  pkgs = (import <nixpkgs> { });
+  pkgs = import nixpkgs { };
 in 
 {
   hello = pkgs.hello;
